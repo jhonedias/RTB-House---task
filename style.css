@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+}
+
+.banner160-banner {
+  cursor: pointer;
+  position: relative;
+  width: 160px;
+  height: 600px;
+  background: #fff;
+  border: 1px solid #dedede;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.banner160-close {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  border: 0;
+  background: none;
+  font-size: 18px;
+  line-height: 1;
+  color: #666;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.banner160-slider {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid #cbcbcb;
+}
+
+/* All slides sit in one row; the track is moved with translateX */
+.banner160-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.banner160-offer {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 4px 14px;
+  text-align: center;
+}
+
+.banner160-offer__img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.banner160-offer__name {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #222;
+}
+
+.banner160-offer__price {
+  margin-bottom: 34px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #111;
+  white-space: nowrap;
+}
+
+.banner160-offer__button {
+  width: 110px;
+  height: 34px;
+  border: 0;
+  background: #f0453a;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.banner160-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 76px;
+  position: relative;
+}
+
+.banner160-logo img {
+  width: 140px;
+}
+
+.banner160-gray-lines {
+  width: 8px;
+  height: 6px;
+  position: absolute;
+  left: 4px;
+  bottom: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.banner160-gray-line {
+  width: 100%;
+  height: 2px;
+  background-color: #949494;
+}
