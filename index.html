@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="ad.size" content="width=300,height=600">
+  <script>
+    // Landing URL; the ad server replaces it with its tracked click URL
+    var clickTag = 'https://www.rtbhouse.com/';
+  </script>
+  <title>Banner 300x600</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bannervip-banner" id="bannervip_banner">
+    <div class="bannervip-stage" id="bannervip_stage">
+      <div class="bannervip-images" id="bannervip_images"></div>
+
+      <div class="bannervip-country" id="bannervip_country">
+        <span id="bannervip_country_text"></span>
+      </div>
+      <div class="bannervip-city" id="bannervip_city">
+        <span class="bannervip-city__text" id="bannervip_city_text"></span>
+      </div>
+
+      <div class="bannervip-price" id="bannervip_price">
+        <span class="bannervip-price__label" id="bannervip_price_label"></span>
+        <span class="bannervip-price__value" id="bannervip_price_value"></span>
+      </div>
+
+      <button class="bannervip-cta" id="bannervip_cta" type="button">
+        BOOK NOW<span class="bannervip-cta__arrow"></span>
+      </button>
+      <div class="bannervip-line" id="bannervip_line"></div>
+
+      <div class="bannervip-dots" id="bannervip_dots"></div>
+
+      <div class="bannervip-panel" id="bannervip_panel"></div>
+      <img class="bannervip-logo" id="bannervip_logo" src="logo.avif" alt="flybee">
+
+      <div class="bannervip-menu">
+        <div class="bannervip-menu-line"></div>
+        <div class="bannervip-menu-line"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Rubik, Arial, Helvetica, sans-serif;
+  background: #fff;
+}
+
+.bannervip-banner {
+  cursor: pointer;
+  position: relative;
+  width: 300px;
+  height: 600px;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* 1px frame drawn on top of everything */
+.bannervip-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid #eee;
+  pointer-events: none;
+}
+
+.bannervip-stage {
+  position: absolute;
+  inset: 0;
+  visibility: hidden;
+}
+
+.bannervip-images,
+.bannervip-image {
+  position: absolute;
+  inset: 0;
+}
+
+.bannervip-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bannervip-country {
+  position: absolute;
+  left: 36px;
+  top: 352px;
+  height: 20px;
+  padding: 0 8px 0 13px;
+  background: #fff;
+  color: #000;
+  font-size: 15px;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+.bannervip-city {
+  position: absolute;
+  left: 36px;
+  top: 371px;
+  height: 49px;
+  padding: 0 14px 0 13px;
+  background: #fcda16;
+  color: #000;
+  font-size: 45px;
+  line-height: 49px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.bannervip-city__text {
+  display: block;
+}
+
+.bannervip-price {
+  position: absolute;
+  left: 92px;
+  top: 439px;
+  color: #fcda16;
+  white-space: nowrap;
+}
+
+.bannervip-price__label {
+  display: block;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.bannervip-price__value {
+  display: block;
+  margin-top: -1px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.bannervip-cta {
+  position: absolute;
+  left: 92px;
+  top: 480px;
+  width: 158px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  background: #fff;
+  color: #000;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.bannervip-cta__arrow {
+  width: 0;
+  height: 0;
+  border-left: 9px solid #fcda16;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+
+.bannervip-line {
+  position: absolute;
+  left: 36px;
+  top: 503px;
+  width: 77px;
+  height: 3px;
+  background: #fcda16;
+}
+
+.bannervip-dots {
+  position: absolute;
+  left: 35px;
+  top: 564px;
+  display: flex;
+  gap: 7px;
+}
+
+.bannervip-dot {
+  width: 13px;
+  height: 13px;
+  background: #fff;
+}
+
+.bannervip-dot.bannervip-is-active {
+  background: #fcda16;
+}
+
+/* Full yellow intro screen that shrinks into the logo box */
+.bannervip-panel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 600px;
+  background: #fcda16;
+}
+
+.bannervip-logo {
+  position: absolute;
+  left: 53px;
+  top: 19px;
+  width: 96px;
+}
+
+.bannervip-menu {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 8px;
+  height: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bannervip-menu-line {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
